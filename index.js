@@ -43,7 +43,7 @@ app.post("/generateReport", (req, res) => {
    
 
     
-   // console.log(bank.name);
+   console.log(bank.name);
     let browser;
   (async () => {
     browser = await puppeteer.launch();
