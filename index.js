@@ -28,7 +28,7 @@ let students = [
     country: "USA"
 }];
 app.get("/generateReport", (req, res) => {
-    ejs.renderFile(path.join(__dirname, './views/', "report-template.ejs"), {students: students}, (err, data) => {
+    ejs.renderFile(path.join(__dirname, './views/', "template.ejs"), {students: students}, (err, data) => {
     if (err) {
           res.send(err);
     } else {
