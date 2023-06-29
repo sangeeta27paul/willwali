@@ -22,7 +22,8 @@ app.post("/generateReport", (req, res) => {
         nationality:req.body.nationality,
         residance:req.body.residance,
         assetcountry:req.body.assetcountry,
-        id:req.body.willid
+        id:req.body.willid,
+        pic:req.body.pic
     },
     {executor1:{name:req.body.exe1.name,
         relation:req.body.exe1.relation,
