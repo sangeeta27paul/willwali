@@ -118,7 +118,9 @@ let guardian={guard1:{name:req.body.guard1.name,
    // console.log(wish);
     let browser;
   (async () => {
-    browser = await puppeteer.launch({ headless: "new" });
+      const browser = await puppeteer.launch({
+    args: ["--no-sandbox", "--disabled-setupid-sandbox"],
+  });
     const [page] = await browser.pages();
     //html_footer = `<div style='width:100%;text-align:right'><span style='font-size:10px;margin-right:20px'>Page <span class='pageNumber'></span> of <span class='totalPages'></span>.</span></div>`;
     const html = await ejs.renderFile("template.ejs", {details:details[0],exe:details[1],bank:bank,property:property,invest:invest,ppf:ppf,vehicle:vehicle,ins:ins,gift:gift,wish:wish,charity:charity,guard:guardian});
