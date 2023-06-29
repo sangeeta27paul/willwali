@@ -75,7 +75,7 @@
                 margin: 0;
                 line-height:0.5cm;
             }
-        }
+        
 
         .pagebreak {
             page-break-before: always;
@@ -83,10 +83,24 @@
 
         footer .left {
             float: left;
+            font-size: 10px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            
+            margin-top: 20px;
+            height: 15px;
         }
 
         footer .right {
             float: right;
+            font-size: 8px;
+            position: fixed;
+            bottom: 0;
+          
+            right: 0;
+            margin-top: 20px;
+            height: 15px;
         }
 
         footer {
@@ -97,7 +111,7 @@
             margin-top: 20px;
             height: 15px;
         }
-
+    }
 
         .main {
             display: flex;
@@ -838,6 +852,7 @@
                         <div class="page-break"></div>
 
                         <script>
+                            var num=1;
                             var bankname = document.getElementById("yy").innerHTML.split(',');
                             var bankno = document.getElementById("bankno").innerHTML.split(',');
                             var bankbranch = document.getElementById("bankbranch").innerHTML.split(',');
@@ -845,13 +860,14 @@
                             var bankcount = document.getElementById("bankcount").innerHTML.split(',');
                             var bankshare = document.getElementById("bankshare").innerHTML.split(',');
                             var bankcontact = document.getElementById("bankcontact").innerHTML.split(',');
-                            if (bankname.length > 0) {
 
+                            if (bankname.length > 0 && document.getElementById("yy").innerHTML.trim()!=="") {
+                                //num=num+1;
                                 var xyz = document.getElementById("bank");
 
                                 xyz.innerHTML += `<p>This is how I want the distribution of my bank accounts to be executed ABSOLUTELY -
    
-   </p><h2>4.1 BANK ACCOUNTS</h2>`;
+   </p><h2>4.${num} BANK ACCOUNTS</h2>`;
 
 
                                 var bankflag = 0;
@@ -949,11 +965,12 @@
                                     table.innerHTML += newRowHTML;
 
                                 }
-
+                                num=num+1;
                             }
 
                             /*PROPERTIES*/
-
+                            
+                            
 
                             var propaddress = document.getElementById("propaddress").innerHTML.split(',');
                             var propstatus = document.getElementById("propstatus").innerHTML.split(',');
@@ -963,13 +980,13 @@
                             var propshare = document.getElementById("propshare").innerHTML.split(',');
                             var propcontact = document.getElementById("propcontact").innerHTML.split(',');
 
-                            if (propaddress.length > 0) {
-
+                            if (propaddress.length > 0 && document.getElementById("propaddress").innerHTML.trim()!=="") {
+                                
                                 var xyz = document.getElementById("prop");
 
                                 xyz.innerHTML += `<p>This is how I want the distribution of my properties to be executed ABSOLUTELY -
 
-</p><h2>4.2 PROPERTIES</h2>`;
+</p><h2>4.${num} PROPERTIES</h2>`;
 
 
                                 var propflag = 0;
@@ -1063,6 +1080,7 @@
                                     table.innerHTML += newRowHTML;
 
                                 }
+                                num=num+1;
 
                             }
 
@@ -1077,13 +1095,13 @@
                             var investcontact = document.getElementById("investcontact").innerHTML.split(',');
 
 
-                            if (investwith.length > 0) {
+                            if (investwith.length > 0 && document.getElementById("investwith").innerHTML.trim()!=="") {
 
                                 var xyz = document.getElementById("invest");
 
                                 xyz.innerHTML += `<p>This is how I want the distribution of my investments accounts to be executed ABSOLUTELY -
 
-</p><h2>4.3 INVESTMENTS</h2>`;
+</p><h2>4.${num} INVESTMENTS</h2>`;
 
 
 
@@ -1176,7 +1194,7 @@
                                     table.innerHTML += newRowHTML;
 
                                 }
-
+                                num=num+1;
                             }
 
                             /*ppf*/
@@ -1190,13 +1208,13 @@
 
 
 
-                            if (ppfname.length > 0) {
+                            if (ppfname.length > 0 && document.getElementById("ppfname").innerHTML.trim()!=="") {
 
                                 var xyz = document.getElementById("ppf");
 
                                 xyz.innerHTML += `<p>This is how I want the distribution of my provident fund accounts to be executed ABSOLUTELY -
 
-</p><h2>4.4 PROVIDENT FUND</h2>`;
+</p><h2>4.${num} PROVIDENT FUND</h2>`;
 
                                 var ppfflag=0;
                                 for (var j = 0; j < ppfname.length; j++) {
@@ -1290,7 +1308,8 @@
                                 table.innerHTML += newRowHTML;
 
                                 }
-
+                                
+                                num=num+1;
                                 }
 
 
@@ -1307,13 +1326,13 @@
                             var vehshare = document.getElementById("vehshare").innerHTML.split(',');
                             var vehcontact = document.getElementById("vehcontact").innerHTML.split(',');
 
-                            if (vehname.length > 0) {
+                            if (vehname.length > 0 && document.getElementById("vehname").innerHTML.trim()!=="") {
 
                                 var xyz = document.getElementById("vehicle");
 
                                 xyz.innerHTML += `<p>This is how I want the distribution of my vehicles to be executed ABSOLUTELY -
 
-</p><h2>4.5 VEHICLE</h2>`;
+</p><h2>4.${num} VEHICLE</h2>`;
 
 
 
@@ -1408,7 +1427,7 @@
                                     table.innerHTML += newRowHTML;
 
                                 }
-
+                                num=num+1;
                             }
 
                             /*INSURANCE*/
@@ -1421,13 +1440,13 @@
                             var insshare = document.getElementById("insshare").innerHTML.split(',');
                             var inscontact = document.getElementById("inscontact").innerHTML.split(',');
 
-                            if (insname.length > 0) {
+                            if (insname.length > 0 && document.getElementById("insname").innerHTML.trim()!=="" ) {
 
                                 var xyz = document.getElementById("insurance");
 
                                 xyz.innerHTML += `<p>This is how I want the distribution of my insurances to be executed ABSOLUTELY -
 
-</p><h2>4.6 INSURANCE</h2>`;
+</p><h2>4.${num} INSURANCE</h2>`;
 
 
 
@@ -1521,21 +1540,24 @@
                                     table.innerHTML += newRowHTML;
 
                                 }
-
+                                num=num+1;
                             }
 
                             /*gifts*/
+                            if(num>1){ num=5;}
+                            else{num=4;}
+                            
                             var giftitem = document.getElementById("giftitem").innerHTML.split(',');
                             var giftbene = document.getElementById("giftbene").innerHTML.split(',');
                             var giftcontact = document.getElementById("giftcontact").innerHTML.split(',');
 
-                            if (giftitem.length > 0) {
+                            if (giftitem.length > 0 && document.getElementById("giftitem").innerHTML.trim()!=="") {
 
                                 var xyz = document.getElementById("gifts");
 
                                 xyz.innerHTML += `<p>I would like to gift the following items to the beneficiaries below:
 
-</p><h2>5 GIFTS</h2>`;
+</p><h2>${num} GIFTS</h2>`;
 
 
 
@@ -1599,7 +1621,7 @@
                                     table.innerHTML += newRowHTML;
 
                                 }
-
+                                num=num+1;
                             }
 
 
@@ -1607,13 +1629,13 @@
                             /*WISHES*/
                             var aboutwish = document.getElementById("wishabout").innerHTML.split(',');
 
-                            if (aboutwish.length > 0) {
+                            if (aboutwish.length > 0 && document.getElementById("wishabout").innerHTML!=="") {
 
                                 var xyz = document.getElementById("wishes");
 
                                 xyz.innerHTML += `<p id = "p1">I would like the following wishes to be fulfilled
 
-</p><h2>6 WISHES</h2>`;
+</p><h2>${num} WISHES</h2>`;
 
 
 
@@ -1683,20 +1705,20 @@
                                     table.innerHTML += newRowHTML;
 
                                 }
-
+                                num=num+1;
                             }
 
 
 
                             /*Charity*/
                             var charity = document.getElementById("charityabout").innerHTML.split(',');
-                            if (charity.length > 0) {
+                            if (charity.length > 0 && document.getElementById("charityabout").innerHTML.trim()!=="") {
 
                                 var xyz = document.getElementById("charity");
 
                                 xyz.innerHTML += `<p>I would like the following wishes to be fulfilled
 
-</p><h2>7 CHARITY</h2>`;
+</p><h2>${num} CHARITY</h2>`;
 
 
 
@@ -2120,7 +2142,7 @@
         <footer>
 
             <div class="left">Will of <%=details.name%></div>
-
+            
             <div class="right"><%=details.id%></div>
 
         </footer>
