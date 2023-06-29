@@ -7,7 +7,7 @@
             font-family: Arial, sans-serif;
             font-size: 14px;
         }
-    
+
         .firscontent {
             display: flex;
             flex-direction: row;
@@ -17,7 +17,7 @@
             margin-bottom: 30px;
             align-items: flex-start;
         }
-    
+
         .class1 {
             display: flex;
             flex-direction: column;
@@ -25,7 +25,7 @@
             margin-right: 20px;
             font-size-adjust: .7;
         }
-    
+
         .class2 {
             margin-right: 30px;
             margin-top: 25px;
@@ -34,17 +34,17 @@
             width: 25%;
             aspect-ratio: 1;
         }
-    
+
         .imageofuser {
             max-width: 200px;
             min-width: 0px;
             aspect-ratio: 1;
         }
-    
+
         #printOnly {
             display: none;
         }
-    
+
         #bank,
         #prop,
         #invest,
@@ -60,49 +60,52 @@
             min-width: 370px;
             flex: 1;
         }
-    
+
         @media print {
             #printOnly {
                 display: block;
-                @page {
-            size: A4;
-            margin: 0;
-        }}
 
-        body {
-            margin: 1.5cm;
+                @page {
+                    size: A4;
+                    margin: 0;
+                }
+            }
+
+            body {
+                margin: 0;
+                line-height:0.5cm;
+            }
         }
-}
-    
-            .pagebreak {
-                page-break-before: always;
-            }
-    
-            footer .left {
-                float: left;
-            }
-    
-            footer .right {
-                float: right;
-            }
-    
-            footer {
-                position: fixed;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                margin-top: 20px;
-                height: 15px;
-            }
-        
-    
+
+        .pagebreak {
+            page-break-before: always;
+        }
+
+        footer .left {
+            float: left;
+        }
+
+        footer .right {
+            float: right;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin-top: 20px;
+            height: 15px;
+        }
+
+
         .main {
             display: flex;
             flex-direction: row;
             justify-content: center;
             align-items: center;
         }
-    
+
         .parent {
             background-color: white;
             display: flex;
@@ -113,7 +116,7 @@
             min-width: 0px;
             justify-content: space-around;
         }
-    
+
         .fclass {
             display: flex;
             flex-direction: column;
@@ -123,11 +126,11 @@
             min-width: 0px;
             padding-top: 20px;
         }
-    
+
         table {
             margin-right: 10px;
         }
-    
+
         p,
         h1,
         .info {
@@ -136,7 +139,7 @@
             max-width: 100%;
             min-width: 0%;
         }
-    
+
         .fcontainer1 {
             display: flex;
             flex-direction: column;
@@ -144,7 +147,7 @@
             max-width: 100%;
             min-width: 0%;
         }
-    
+
         .f1item1,
         .f1item2,
         .f1item3,
@@ -153,15 +156,15 @@
             max-width: 100%;
             min-width: 0%;
         }
-    
+
         .bluetext {
             color: #0078d7;
         }
-    
+
         #bt1 {
             margin-top: 7px;
         }
-    
+
         .fcontainer2 {
             display: flex;
             flex-direction: row;
@@ -176,23 +179,23 @@
             max-width: 100%;
             min-width: 0%;
         }
-    
+
         .f2item1 {
             margin-left: 3.5%;
             max-width: 100%;
             min-width: 0%;
         }
-    
+
         .f2item2 {
             width: 45%;
             max-width: 100%;
             min-width: 0%;
         }
-    
+
         .greytext {
             color: grey;
         }
-    
+
         .fcontainer3 {
             display: flex;
             flex-direction: column;
@@ -200,18 +203,18 @@
             max-width: 100%;
             min-width: 0%;
         }
-    
+
         .f3item1,
         .f3item2 {
             display: flex;
             max-width: 100%;
             min-width: 0%;
         }
-    
+
         .greentext {
             color: green;
         }
-    
+
         .fcontainer4 {
             display: flex;
             flex-direction: row;
@@ -221,14 +224,15 @@
             height: auto;
             transition: all .2s linear;
         }
-    
-        .f4item1{
+
+        .f4item1 {
             display: flex;
             flex-direction: column;
             border: 2px solid rgb(0, 0, 0);
             flex: 1 1 250px;
             margin-right: 20px;
         }
+
         .f4item2 {
             display: flex;
             flex-direction: column;
@@ -236,19 +240,19 @@
             flex: 1 1 250px;
             margin-right: 20px;
         }
-    
+
         .fcontainer5 {
             display: flex;
             flex-direction: column;
         }
-    
+
         .f5item1,
         .f5item2 {
             display: flex;
             flex-direction: column;
             margin-top: 10px;
         }
-    
+
         .fclass6 {
             display: flex;
             flex-direction: row;
@@ -258,7 +262,7 @@
             height: auto;
             transition: all .2s linear;
         }
-    
+
         .fcontainer7,
         .fcontainer9 {
             display: flex;
@@ -268,21 +272,21 @@
             height: 250px;
             flex: 1 1 250px;
         }
-    
+
         .f7class1 {
             display: flex;
             flex-direction: column;
             flex: 1 1 250px;
             height: 180px;
         }
-    
+
         .f7class2 {
             display: flex;
             flex-direction: column;
             flex: 1 1 250px;
             height: 70px;
         }
-    
+
         .f7item1,
         .f7item2,
         .f7item3,
@@ -293,7 +297,7 @@
             max-width: 100%;
             min-width: 0%;
         }
-    
+
         .fcontainer8 {
             margin-top: 15px;
             margin-right: 20px;
@@ -302,7 +306,7 @@
             width: 100%;
             height: 90px;
         }
-    
+
         .f8item1 {
             display: flex;
             padding: 10px;
@@ -310,7 +314,7 @@
             aspect-ratio: 1;
             border: 1px solid black;
         }
-    
+
         .f8item2 {
             display: flex;
             flex-direction: row;
@@ -321,59 +325,60 @@
             margin-right: 20px;
             width: 75%;
         }
-       
-    /* Existing CSS code */
 
-    /* ... */
+        /* Existing CSS code */
 
-    .fcontainer10 {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin-top: 15px;
-        margin-right: 20px;
-    }
+        /* ... */
 
-    
-    /* Existing CSS code */
-
-    /* ... */
-
-    .fcontainer10 {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin-top: 15px;
-        margin-right: 20px;
-    }
-    .f10item1 {
-    display: flex;
-    border: 2px solid black;
-    width: 100%;
-    margin-top: 45px;
-}
-
-    .witness-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .witness-box {
-        width: 200px;
-        height: 150px;
-        border: 2px solid black;
-        margin-bottom: 10px;
-    }
-
-    .witness-details {
-        text-align: center;
-    }
-</style>
+        .fcontainer10 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 15px;
+            margin-right: 20px;
+        }
 
 
+        /* Existing CSS code */
 
-    
+        /* ... */
+
+        .fcontainer10 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 15px;
+            margin-right: 20px;
+        }
+
+        .f10item1 {
+            display: flex;
+            border: 2px solid black;
+            width: 100%;
+            margin-top: 45px;
+        }
+
+        .witness-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .witness-box {
+            width: 200px;
+            height: 150px;
+            border: 2px solid black;
+            margin-bottom: 10px;
+        }
+
+        .witness-details {
+            text-align: center;
+        }
+    </style>
+
+
+
+
 
 </head>
 
@@ -413,9 +418,11 @@
                     </div>
 
                     <p>This Will is made by me (<%=details.name%> & <%=details.passport%>) currently residing in
-                        <%=details.residance%> and my nationality is <%=details.nationality%>. I’m of full age and capacity
-                            and being of sound mind hereby declare that I make this Will voluntarily and without any
-                            duress and or undue influence for my assets in <%=details.assetcountry%>.</p>
+                                <%=details.residance%> and my nationality is <%=details.nationality%>. I’m of full age
+                                        and capacity
+                                        and being of sound mind hereby declare that I make this Will voluntarily and
+                                        without any
+                                        duress and or undue influence for my assets in <%=details.assetcountry%>.</p>
 
                     <h1>1. REVOCATION</h1>
 
@@ -424,7 +431,8 @@
 
                     <div class="info">
 
-                        <p>I have not made any Will or other testamentary document in <%=details.assetcountry%>, but if any is made, I
+                        <p>I have not made any Will or other testamentary document in <%=details.assetcountry%>, but if
+                                any is made, I
                                 hereby revoke all previous Wills and Codicils, if any, and declare this to be my Last
                                 Will and Testament.
 
@@ -441,10 +449,10 @@
 
                             <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-                            
 
-                            
-<style>
+
+
+                            <style>
                                 table {
 
                                     width: 100%;
@@ -498,179 +506,384 @@
                             </style>
 
                         </head>
-<div>
-                        <h1>2. EXECUTORS AND TRUSTEES
+                        <div>
+                            <h1>2. EXECUTORS AND TRUSTEES
 
 
 
 
-                        </h1>
+                            </h1>
 
-                        <p>I, hereby appoint as my sole Executor and Trustee of this my Will
+                            <p>I, hereby appoint as my sole Executor and Trustee of this my Will
 
-                        </p>
+                            </p>
 
-                        <table>
+                            <table>
 
-                            <thead>
+                                <thead>
 
-                                <tr>
+                                    <tr>
 
-                                    <th>Name</th>
+                                        <th>Name</th>
 
-                                    <th>Relationship to testator</th>
+                                        <th>Relationship to testator</th>
 
-                                    <th>ID/ Passport</th>
+                                        <th>ID/ Passport</th>
 
-                                    <th>Contact no & email</th>
+                                        <th>Contact no & email</th>
 
-                                    <th>Address if any provided</th>
+                                        <th>Address if any provided</th>
 
-                                </tr>
+                                    </tr>
 
-                            </thead>
+                                </thead>
 
-                            <tbody id="executor">
+                                <tbody id="executor">
 
-                                <td><%=exe.executor1.name%></td>
-                                <td><%=exe.executor1.relation%></td>
-                                <td><%=exe.executor1.passport%></td>
-                                <td><%=exe.executor1.contactno%>,<%=exe.executor1.email%></td>
-                                <td></td>
+                                    <td>
+                                        <%=exe.executor1.name%>
+                                    </td>
+                                    <td>
+                                        <%=exe.executor1.relation%>
+                                    </td>
+                                    <td>
+                                        <%=exe.executor1.passport%>
+                                    </td>
+                                    <td>
+                                        <%=exe.executor1.contactno%>,<%=exe.executor1.email%>
+                                    </td>
+                                    <td></td>
 
-                            </tbody>
+                                </tbody>
 
-                        </table>
+                            </table>
 
-                        <p>
+                            <p>
 
-                            In case (Full Name from executor1 field) is deceased, not available & unwilling to perform
-                            the duties of an executor, then I appoint
+                                In case (Full Name from executor1 field) is deceased, not available & unwilling to
+                                perform
+                                the duties of an executor, then I appoint
 
-                        </p>
+                            </p>
 
-                        <table>
+                            <table>
 
-                            <thead>
+                                <thead>
 
-                                <tr>
+                                    <tr>
 
-                                    <th>Name</th>
+                                        <th>Name</th>
 
-                                    <th>Relationship to testator</th>
+                                        <th>Relationship to testator</th>
 
-                                    <th>ID/ Passport</th>
+                                        <th>ID/ Passport</th>
 
-                                    <th>Contact no & email</th>
+                                        <th>Contact no & email</th>
 
-                                    <th>Address if any provided</th>
+                                        <th>Address if any provided</th>
 
-                                </tr>
+                                    </tr>
 
-                            </thead>
+                                </thead>
 
-                            <tbody id="executor">
+                                <tbody id="executor">
 
-                                <td><%=exe.executor2.name%></td>
-                                <td><%=exe.executor2.relation%></td>
-                                <td><%=exe.executor2.passport%></td>
-                                <td><%=exe.executor2.contactno%>,<%=exe.executor2.email%></td>
-                                <td></td>
+                                    <td>
+                                        <%=exe.executor2.name%>
+                                    </td>
+                                    <td>
+                                        <%=exe.executor2.relation%>
+                                    </td>
+                                    <td>
+                                        <%=exe.executor2.passport%>
+                                    </td>
+                                    <td>
+                                        <%=exe.executor2.contactno%>,<%=exe.executor2.email%>
+                                    </td>
+                                    <td></td>
 
-                            </tbody>
+                                </tbody>
 
-                        </table>
+                            </table>
 
-                        <h1>3. FUNERAL EXPENSES AND DEBTS
+                            <h1>3. FUNERAL EXPENSES AND DEBTS
 
-                        </h1>
+                            </h1>
 
-                        <p>3.1 I direct the Executor to pay all my lawful debts, funeral and testamentary expenses out
-                            of my estate as possible after my death.
+                            <p>3.1 I direct the Executor to pay all my lawful debts, funeral and testamentary expenses
+                                out
+                                of my estate as possible after my death.
 
-                        </p>
+                            </p>
 
-                        <p>3.2 The Executor shall have the power to sell and convert any assets into cash to pay all
-                            debts (if any).
+                            <p>3.2 The Executor shall have the power to sell and convert any assets into cash to pay all
+                                debts (if any).
 
-                        </p>
-
-
-
-
-                        <h1>4. ASSETS in COUNTRY for which will is being made
+                            </p>
 
 
 
 
-                        </h1>
-                    </div>
+                            <h1>4. ASSETS in <%=details.assetcountry%>
+
+                            </h1>
+                        </div>
+                        <div id="yy" style="display:none">
+                            <%=bank.name%>
+                        </div>
+                        <div id="zz" style="display:none">
+                            <%=bank.bene%>
+                        </div>
+                        <div id="bankshare" style="display:none">
+                            <%=bank.share%>
+                        </div>
+                        <div id="bankcontact" style="display:none">
+                            <%=bank.contact%>
+                        </div>
+                        <div id="bankcount" style="display:none">
+                            <%=bank.count%>
+                        </div>
+                        <div id="bankno" style="display:none">
+                            <%=bank.no%>
+                        </div>
+                        <div id="bankbranch" style="display:none">
+                            <%=bank.branch%>
+                        </div>
                         <div id="bank"></div>
+
+                        <div id="propaddress" style="display:none">
+                            <%=property.address%>
+                        </div>
+                        <div id="propbene" style="display:none">
+                            <%=property.bene%>
+                        </div>
+                        <div id="propshare" style="display:none">
+                            <%=property.share%>
+                        </div>
+                        <div id="propcontact" style="display:none">
+                            <%=property.contact%>
+                        </div>
+                        <div id="propcount" style="display:none">
+                            <%=property.count%>
+                        </div>
+                        <div id="proptype" style="display:none">
+                            <%=property.type%>
+                        </div>
+                        <div id="propstatus" style="display:none">
+                            <%=property.status%>
+                        </div>
 
                         <div id="prop"></div>
 
+
+                        <div id="investwith" style="display:none">
+                            <%=invest.with%>
+                        </div>
+                        <div id="investbene" style="display:none">
+                            <%=invest.bene%>
+                        </div>
+                        <div id="investshare" style="display:none">
+                            <%=invest.share%>
+                        </div>
+                        <div id="investcontact" style="display:none">
+                            <%=invest.contact%>
+                        </div>
+                        <div id="investcount" style="display:none">
+                            <%=invest.count%>
+                        </div>
+                        <div id="investtype" style="display:none">
+                            <%=invest.type%>
+                        </div>
+                        <div id="investno" style="display:none">
+                            <%=invest.no%>
+                        </div>
+
+
                         <div id="invest"></div>
+
+                        <div id="ppfname" style="display:none">
+                            <%=ppf.name%>
+                        </div>
+                        <div id="ppfbene" style="display:none">
+                            <%=ppf.bene%>
+                        </div>
+                        <div id="ppfshare" style="display:none">
+                            <%=ppf.share%>
+                        </div>
+                        <div id="ppfcontact" style="display:none">
+                            <%=ppf.contact%>
+                        </div>
+                        <div id="ppfcount" style="display:none">
+                            <%=ppf.count%>
+                        </div>
+                        <div id="ppfno" style="display:none">
+                            <%=ppf.no%>
+                        </div>
 
                         <div id="ppf"></div>
 
+                        <div id="vehname" style="display:none">
+                            <%=vehicle.name%>
+                        </div>
+                        <div id="vehbene" style="display:none">
+                            <%=vehicle.bene%>
+                        </div>
+                        <div id="vehshare" style="display:none">
+                            <%=vehicle.share%>
+                        </div>
+                        <div id="vehcontact" style="display:none">
+                            <%=vehicle.contact%>
+                        </div>
+                        <div id="vehcount" style="display:none">
+                            <%=vehicle.count%>
+                        </div>
+                        <div id="vehno" style="display:none">
+                            <%=vehicle.no%>
+                        </div>
+                        <div id="vehstatus" style="display:none">
+                                <%=vehicle.status%>
+                            
+                        </div>
                         <div id="vehicle"></div>
+
+                        <div id="insname" style="display:none">
+                            <%=ins.name%>
+                        </div>
+                        <div id="insbene" style="display:none">
+                            <%=ins.bene%>
+                        </div>
+                        <div id="insshare" style="display:none">
+                            <%=ins.share%>
+                        </div>
+                        <div id="inscontact" style="display:none">
+                            <%=ins.contact%>
+                        </div>
+                        <div id="inscount" style="display:none">
+                            <%=ins.count%>
+                        </div>
+                        <div id="insno" style="display:none">
+                            <%=ins.no%>
+                        </div>
+                        <div id="instype" style="display:none">
+                                <%=ins.type%>
+                            
+                        </div>
 
                         <div id="insurance"></div>
 
+                        <div id="giftitem" style="display:none">
+                            <%=gift.item%>
+                        </div>
+                        <div id="giftbene" style="display:none">
+                            <%=gift.bene%>
+                        </div>
+                        <div id="giftcontact" style="display:none">
+                            <%=gift.contact%>
+                        </div>
+
                         <div id="gifts"></div>
+                        <div id="wishabout" style="display:none">
+                            <%=wish.wish%></div>
 
                         <div id="wishes"></div>
+                        <div id="charityabout" style="display:none">
+                            <%=charity.charity%></div>
 
                         <div id="charity"></div>
+                        <div id="guard1name" style="display:none">
+                            <%=guard.guard1.name%>
+                        </div>
+                        <div id="guard1relation" style="display:none">
+                            <%=guard.guard1.relation%>
+                        </div>
+                        <div id="guard1no" style="display:none">
+                            <%=guard.guard1.contactno%>
+                        </div>
+                        <div id="guard1email" style="display:none">
+                            <%=guard.guard1.email%>
+                        </div>
+                        <div id="guard1address" style="display:none">
+                            <%=guard.guard1.address%>
+                        </div>
+                        <div id="guard1passport" style="display:none">
+                            <%=guard.guard1.passport%>
+                        </div>
+                        
 
                         <div id="guard1"></div>
+                        <div id="guard2name" style="display:none">
+                            <%=guard.guard2.name%>
+                        </div>
+                        <div id="guard2relation" style="display:none">
+                            <%=guard.guard2.relation%>
+                        </div>
+                        <div id="guard2no" style="display:none">
+                            <%=guard.guard2.contactno%>
+                        </div>
+                        <div id="guard2email" style="display:none">
+                            <%=guard.guard2.email%>
+                        </div>
+                        <div id="guard2address" style="display:none">
+                            <%=guard.guard2.address%>
+                        </div>
+                        <div id="guard2passport" style="display:none">
+                            <%=guard.guard2.passport%>
+                        </div>
+                        
 
                         <div id="guard2"></div>
 
 
 
                         <div class="page-break"></div>
-                       
+
                         <script>
-                          // console.log(<%=bank.name%>);
-                           var bankdetails= <%=bank.name%>;
-                            if (2 > 0) {
+                            var bankname = document.getElementById("yy").innerHTML.split(',');
+                            var bankno = document.getElementById("bankno").innerHTML.split(',');
+                            var bankbranch = document.getElementById("bankbranch").innerHTML.split(',');
+                            var bankbene = document.getElementById("zz").innerHTML.split(',');
+                            var bankcount = document.getElementById("bankcount").innerHTML.split(',');
+                            var bankshare = document.getElementById("bankshare").innerHTML.split(',');
+                            var bankcontact = document.getElementById("bankcontact").innerHTML.split(',');
+                            if (bankname.length > 0) {
 
                                 var xyz = document.getElementById("bank");
 
                                 xyz.innerHTML += `<p>This is how I want the distribution of my bank accounts to be executed ABSOLUTELY -
+   
+   </p><h2>4.1 BANK ACCOUNTS</h2>`;
 
-</p><h2>4.1 BANK ACCOUNTS</h2>`;
 
-
-
-                                for (var i = 0; i < 3; i++) {
+                                var bankflag = 0;
+                                for (var j = 0; j < bankname.length; j++) {
 
                                     var table = document.createElement("table");
 
-                                    table.id = "tb" + (i + 1);
+                                    table.id = "tb" + (j + 1);
 
                                     xyz.appendChild(table);
 
 
 
 
-                                    var bankbene = ["a"];
+                                    //    var bankbene = y[j].split(",");
 
-                                    var bankamnt = ["a"];
-
-                                    var bankcontact = ["a"];
+                                    //    var bankamnt =bankshare[i].split(",");
 
 
+                                    //    var bankcontact = bankcontct[i].split(",");
 
 
-                                    if (1 > 0) {
 
-                                        addbank(table, bankbene, bankamnt, bankcontact);
+
+
+                                    if (bankcount[j] > 0) {
+
+                                        addbank(table, bankflag, j, bankbene, bankshare, bankcontact);
 
                                     }
 
-                                    if (i < 2) {
+                                    if (j < 2) {
 
                                         var lineBreak = document.createElement("br");
 
@@ -679,54 +892,55 @@
                                         xyz.appendChild(lineBreak.cloneNode(true));
 
                                     }
+                                    bankflag = bankflag + parseInt(bankcount[j]);
 
                                 }
 
 
 
 
-                                function addbank(table, data1, data2, data3) {
+                                function addbank(table, flag, j, data1, data2, data3) {
 
                                     var newRowHTML = `<tr>
-
-          <td colspan="3">
-
-            <p>Bank Name</p>
-
-            <p>Branch Code/IFSC Code</p>
-
-            <p>Account No</p>
-
-          </td>
-
-        </tr>
-
-        <tr>
-
-          <th>Beneficiary</th>
-
-          <th>Amount in %</th>
-
-          <th>Contact if provided by user</th>
-
-        </tr>`;
-
-
+   
+             <td colspan="3">
+   
+               <p>Bank Name:${bankname[j]}</p>
+   
+               <p>Branch Code/IFSC Code:${bankbranch[j]}</p>
+   
+               <p>Account No:${bankno[j]}</p>
+   
+             </td>
+   
+           </tr>
+   
+           <tr>
+   
+             <th>Beneficiary</th>
+   
+             <th>Amount in %</th>
+   
+             <th>Contact if provided by user</th>
+   
+           </tr>`;
 
 
-                                    for (var i = 0; i < data1.length; i++) {
+
+
+                                    for (var i = flag; i < flag + parseInt(bankcount[j]); i++) {
 
 
 
                                         newRowHTML += `<tr>
-
-              <td>${data1[i]}</td>
-
-              <td>${data2[i]}</td>
-
-              <td>${data3[i]}</td>
-
-            </tr>`;
+   
+                 <td>${data1[i]}</td>
+   
+                 <td>${data2[i]}</td>
+   
+                 <td>${data3[i]}</td>
+   
+               </tr>`;
 
 
 
@@ -740,7 +954,16 @@
 
                             /*PROPERTIES*/
 
-                            if (2 > 0) {
+
+                            var propaddress = document.getElementById("propaddress").innerHTML.split(',');
+                            var propstatus = document.getElementById("propstatus").innerHTML.split(',');
+                            var proptype = document.getElementById("proptype").innerHTML.split(',');
+                            var propbene = document.getElementById("propbene").innerHTML.split(',');
+                            var propcount = document.getElementById("propcount").innerHTML.split(',');
+                            var propshare = document.getElementById("propshare").innerHTML.split(',');
+                            var propcontact = document.getElementById("propcontact").innerHTML.split(',');
+
+                            if (propaddress.length > 0) {
 
                                 var xyz = document.getElementById("prop");
 
@@ -749,35 +972,30 @@
 </p><h2>4.2 PROPERTIES</h2>`;
 
 
+                                var propflag = 0;
 
-
-                                for (var i = 0; i < 3; i++) {
+                                for (var j = 0; j < propaddress.length; j++) {
 
                                     var table = document.createElement("table");
 
-                                    table.id = "tb" + (i + 1);
+                                    table.id = "tb" + (j + 1);
 
                                     xyz.appendChild(table);
 
 
+                                    // var propbene = ["a"];
 
+                                    // var propamnt = ["a"];
 
-                                    var propbene = ["a"];
-
-                                    var propamnt = ["a"];
-
-                                    var propcontact = ["a"];
-
+                                    // var propcontact = ["a"];
 
 
 
-                                    if (1 > 0) {
+                                    addprop(table, propflag, j, propbene, propshare, propcontact);
 
-                                        addprop(table, propbene, propamnt, propcontact);
 
-                                    }
 
-                                    if (i < 2) {
+                                    if (j < 2) {
 
                                         var lineBreak = document.createElement("br");
 
@@ -786,23 +1004,24 @@
                                         xyz.appendChild(lineBreak.cloneNode(true));
 
                                     }
+                                    propflag = propflag + parseInt(propcount[j]);
 
                                 }
 
 
 
 
-                                function addprop(table, data1, data2, data3) {
+                                function addprop(table, flag, j, data1, data2, data3) {
 
                                     var newRowHTML = `<tr>
 
           <td colspan="3">
 
-            <p>Property Address</p>
+            <p>Property Address:${propaddress[j]}</p>
 
-            <p>Type</p>
+            <p>Type:${proptype[j]}</p>
 
-            <p>Ownership status / Loan-Debt status / Loan provider
+            <p>Ownership status / Loan-Debt status / Loan provider:${propstatus[j]}
 
 </p>
 
@@ -823,7 +1042,7 @@
 
 
 
-                                    for (var i = 0; i < data1.length; i++) {
+                                    for (var i = flag; i < flag + parseInt(propcount[j]); i++) {
 
 
 
@@ -849,7 +1068,16 @@
 
                             /*INVESTMENTS*/
 
-                            if (2 > 0) {
+                            var investwith = document.getElementById("investwith").innerHTML.split(',');
+                            var investno = document.getElementById("investno").innerHTML.split(',');
+                            var investtype = document.getElementById("investtype").innerHTML.split(',');
+                            var investbene = document.getElementById("investbene").innerHTML.split(',');
+                            var investcount = document.getElementById("investcount").innerHTML.split(',');
+                            var investshare = document.getElementById("investshare").innerHTML.split(',');
+                            var investcontact = document.getElementById("investcontact").innerHTML.split(',');
+
+
+                            if (investwith.length > 0) {
 
                                 var xyz = document.getElementById("invest");
 
@@ -859,34 +1087,30 @@
 
 
 
-
-                                for (var i = 0; i < 3; i++) {
+                                var investflag = 0;
+                                for (var j = 0; j < investwith.length; j++) {
 
                                     var table = document.createElement("table");
 
-                                    table.id = "tb" + (i + 1);
+                                    table.id = "tb" + (j + 1);
 
                                     xyz.appendChild(table);
 
 
 
 
-                                    var investbene = ["a"];
+                                    // var investbene = ["a"];
 
-                                    var investamnt = ["a"];
+                                    // var investamnt = ["a"];
 
-                                    var investcontact = ["a"];
-
-
+                                    // var investcontact = ["a"];
 
 
-                                    if (1 > 0) {
+                                    addinvest(table, investflag, j, investbene, investshare, investcontact);
 
-                                        addinvest(table, investbene, investamnt, investcontact);
 
-                                    }
 
-                                    if (i < 2) {
+                                    if (j < 2) {
 
                                         var lineBreak = document.createElement("br");
 
@@ -895,23 +1119,24 @@
                                         xyz.appendChild(lineBreak.cloneNode(true));
 
                                     }
+                                    investflag = investflag + parseInt(investcount[j]);
 
                                 }
 
 
 
 
-                                function addinvest(table, data1, data2, data3) {
+                                function addinvest(table, flag, j, data1, data2, data3) {
 
                                     var newRowHTML = `<tr>
 
           <td colspan="3">
 
-            <p>Investment type:</p>
+            <p>Investment type:${investtype[j]}</p>
 
-            <p>Invested with (Name of Provider):</p>
+            <p>Invested with (Name of Provider):${investwith[j]}</p>
 
-            <p>Certificate Number/ Account Number/ Wallet ID:</p>
+            <p>Certificate Number/ Account Number/ Wallet ID:${investno[j]}</p>
 
           </td>
 
@@ -930,7 +1155,7 @@
 
 
 
-                                    for (var i = 0; i < data1.length; i++) {
+                                    for (var i = flag; i < flag + parseInt(investcount[j]); i++) {
 
 
 
@@ -956,7 +1181,16 @@
 
                             /*ppf*/
 
-                            if (2 > 0) {
+                            var ppfname = document.getElementById("ppfname").innerHTML.split(',');
+                            var ppfno = document.getElementById("ppfno").innerHTML.split(',');
+                            var ppfbene = document.getElementById("ppfbene").innerHTML.split(',');
+                            var ppfcount = document.getElementById("ppfcount").innerHTML.split(',');
+                            var ppfshare = document.getElementById("ppfshare").innerHTML.split(',');
+                            var ppfcontact = document.getElementById("ppfcontact").innerHTML.split(',');
+
+
+
+                            if (ppfname.length > 0) {
 
                                 var xyz = document.getElementById("ppf");
 
@@ -964,106 +1198,116 @@
 
 </p><h2>4.4 PROVIDENT FUND</h2>`;
 
+                                var ppfflag=0;
+                                for (var j = 0; j < ppfname.length; j++) {
 
+                                var table = document.createElement("table");
 
+                                table.id = "tb" + (j + 1);
 
-                                for (var i = 0; i < 3; i++) {
-
-                                    var table = document.createElement("table");
-
-                                    table.id = "tb" + (i + 1);
-
-                                    xyz.appendChild(table);
-
-
-
-
-                                    var ppfbene = ["a"];
-
-                                    var ppfamnt = ["a"];
-
-                                    var ppfcontact = ["a"];
+                                xyz.appendChild(table);
 
 
 
 
-                                    if (1 > 0) {
+                                // var ppfbene = ["a"];
 
-                                        addppf(table, ppfbene, ppfamnt, ppfcontact);
+                                // var ppfamnt = ["a"];
 
-                                    }
+                                // var ppfcontact = ["a"];
 
-                                    if (i < 2) {
 
-                                        var lineBreak = document.createElement("br");
 
-                                        xyz.appendChild(lineBreak);
 
-                                        xyz.appendChild(lineBreak.cloneNode(true));
+                                
 
-                                    }
+                                    addppf(table,ppfflag,j, ppfbene, ppfshare, ppfcontact);
+
+                                
+
+                                if (j < 2) {
+
+                                    var lineBreak = document.createElement("br");
+
+                                    xyz.appendChild(lineBreak);
+
+                                    xyz.appendChild(lineBreak.cloneNode(true));
+
+                                }
+
+                                ppfflag = ppfflag + parseInt(ppfcount[j]);
 
                                 }
 
 
 
 
-                                function addppf(table, data1, data2, data3) {
+                                function addppf(table,flag,j, data1, data2, data3) {
 
-                                    var newRowHTML = `<tr>
+                                var newRowHTML = `<tr>
 
-          <td colspan="3">
+                                <td colspan="3">
 
-            <p>Provider Name</p>
+                                <p>Provider Name:${ppfname[j]}</p>
 
-            <p>Membership No.</p>
+                                <p>Membership No.:${ppfname[j]}</p>
 
-          </td>
+                                </td>
 
-        </tr>
+                                </tr>
 
-        <tr>
+                                <tr>
 
-          <th>Beneficiary</th>
+                                <th>Beneficiary</th>
 
-          <th>Amount in %</th>
+                                <th>Amount in %</th>
 
-          <th>Contact if provided by user</th>
+                                <th>Contact if provided by user</th>
 
-        </tr>`;
-
-
-
-
-                                    for (var i = 0; i < data1.length; i++) {
+                                </tr>`;
 
 
 
-                                        newRowHTML += `<tr>
 
-              <td>${data1[i]}</td>
-
-              <td>${data2[i]}</td>
-
-              <td>${data3[i]}</td>
-
-            </tr>`;
+                                for (var i = flag; i < flag + parseInt(ppfcount[j]); i++) {
 
 
 
-                                    }
+                                    newRowHTML += `<tr>
 
-                                    table.innerHTML += newRowHTML;
+                                <td>${data1[i]}</td>
+
+                                <td>${data2[i]}</td>
+
+                                <td>${data3[i]}</td>
+
+                                </tr>`;
+
+
 
                                 }
 
-                            }
+                                table.innerHTML += newRowHTML;
+
+                                }
+
+                                }
+
+
 
 
 
                             /*vehicle*/
 
-                            if (2 > 0) {
+                            var vehname = document.getElementById("vehname").innerHTML.split(',');
+                            var vehno = document.getElementById("vehno").innerHTML.split(',');
+                            var vehstatus = document.getElementById("vehstatus").innerHTML.split(',');
+                            var vehbene = document.getElementById("vehbene").innerHTML.split(',');
+                            var vehcount = document.getElementById("vehcount").innerHTML.split(',');
+                            var vehshare = document.getElementById("vehshare").innerHTML.split(',');
+                            var vehcontact = document.getElementById("vehcontact").innerHTML.split(',');
+
+                            if (vehname.length > 0) {
 
                                 var xyz = document.getElementById("vehicle");
 
@@ -1073,34 +1317,34 @@
 
 
 
-
-                                for (var i = 0; i < 3; i++) {
+                                var vehflag=0;
+                                for (var j = 0; j < vehname.length; j++) {
 
                                     var table = document.createElement("table");
 
-                                    table.id = "tb" + (i + 1);
+                                    table.id = "tb" + (j + 1);
 
                                     xyz.appendChild(table);
 
 
 
 
-                                    var vehbene = ["a"];
+                                    // var vehbene = ["a"];
 
-                                    var vehamnt = ["a"];
+                                    // var vehamnt = ["a"];
 
-                                    var vehcontact = ["a"];
-
-
+                                    // var vehcontact = ["a"];
 
 
-                                    if (1 > 0) {
 
-                                        addveh(table, vehbene, vehamnt, vehcontact);
 
-                                    }
+                                    
 
-                                    if (i < 2) {
+                                        addveh(table,vehflag,j, vehbene, vehshare, vehcontact);
+
+                                    
+
+                                    if (j < 2) {
 
                                         var lineBreak = document.createElement("br");
 
@@ -1109,21 +1353,22 @@
                                         xyz.appendChild(lineBreak.cloneNode(true));
 
                                     }
+                                    vehflag=vehflag + parseInt(vehcount[j])
 
                                 }
 
 
 
 
-                                function addveh(table, data1, data2, data3) {
+                                function addveh(table,flag,j, data1, data2, data3) {
 
                                     var newRowHTML = `<tr>
 
           <td colspan="3">
 
-            <p>VEHICLE MAKE  & PLATE</p>
+            <p>VEHICLE MAKE  & PLATE:${vehname[j]} ${vehno[j]}</p>
 
-            <p>Ownership status / Loan-Debt status / Loan provider</p>
+            <p>Ownership status / Loan-Debt status / Loan provider: ${vehstatus[j]}</p>
 
           </td>
 
@@ -1142,7 +1387,7 @@
 
 
 
-                                    for (var i = 0; i < data1.length; i++) {
+                                    for (var i = flag; i < flag + parseInt(vehcount[j]); i++) {
 
 
 
@@ -1168,7 +1413,15 @@
 
                             /*INSURANCE*/
 
-                            if (2 > 0) {
+                            var insname = document.getElementById("insname").innerHTML.split(',');
+                            var insno = document.getElementById("insno").innerHTML.split(',');
+                            var instype = document.getElementById("instype").innerHTML.split(',');
+                            var insbene = document.getElementById("insbene").innerHTML.split(',');
+                            var inscount = document.getElementById("inscount").innerHTML.split(',');
+                            var insshare = document.getElementById("insshare").innerHTML.split(',');
+                            var inscontact = document.getElementById("inscontact").innerHTML.split(',');
+
+                            if (insname.length > 0) {
 
                                 var xyz = document.getElementById("insurance");
 
@@ -1178,34 +1431,31 @@
 
 
 
-
-                                for (var i = 0; i < 3; i++) {
+                                var insflag=0;
+                                for (var j = 0; j < insname.length; j++) {
 
                                     var table = document.createElement("table");
 
-                                    table.id = "tb" + (i + 1);
+                                    table.id = "tb" + (j + 1);
 
                                     xyz.appendChild(table);
 
 
 
 
-                                    var insbene = ["a"];
+                                    // var insbene = ["a"];
 
-                                    var insamnt = ["a"];
+                                    // var insamnt = ["a"];
 
-                                    var inscontact = ["a"];
-
-
+                                    // var inscontact = ["a"];
 
 
-                                    if (1 > 0) {
 
-                                        addinsu(table, insbene, insamnt, inscontact);
+                                        addinsu(table,insflag,j, insbene, insshare, inscontact);
 
-                                    }
+                                    
 
-                                    if (i < 2) {
+                                    if (j < 2) {
 
                                         var lineBreak = document.createElement("br");
 
@@ -1214,23 +1464,24 @@
                                         xyz.appendChild(lineBreak.cloneNode(true));
 
                                     }
+                                    insflag=insflag + parseInt(inscount[j])
 
                                 }
 
 
 
 
-                                function addinsu(table, data1, data2, data3) {
+                                function addinsu(table,flag,j, data1, data2, data3) {
 
                                     var newRowHTML = `<tr>
 
           <td colspan="3">
 
-            <p>Insurers Name</p>
+            <p>Insurers Name:${insname[j]}</p>
 
-            <p>Type of Policy</p>
+            <p>Type of Policy:${insno[j]}</p>
 
-            <p>Policy No.</p>
+            <p>Policy No.:${insno[j]}</p>
 
           </td>
 
@@ -1249,7 +1500,7 @@
 
 
 
-                                    for (var i = 0; i < data1.length; i++) {
+                                    for (var i = flag; i < flag + parseInt(inscount[j]); i++) {
 
 
 
@@ -1274,8 +1525,11 @@
                             }
 
                             /*gifts*/
+                            var giftitem = document.getElementById("giftitem").innerHTML.split(',');
+                            var giftbene = document.getElementById("giftbene").innerHTML.split(',');
+                            var giftcontact = document.getElementById("giftcontact").innerHTML.split(',');
 
-                            if (2 > 0) {
+                            if (giftitem.length > 0) {
 
                                 var xyz = document.getElementById("gifts");
 
@@ -1297,28 +1551,16 @@
 
 
 
-                                var giftsbene = ["a"];
+                                // var giftsbene = ["a"];
 
-                                var guftsamnt = ["a"];
+                                // var guftsamnt = ["a"];
 
-                                var giftscontact = ["a"];
-
-
+                                // var giftscontact = ["a"];
 
 
-                                if (1 > 0) {
+                                    addgift(table, giftitem, giftbene, giftcontact);
 
-                                    addgift(table, giftsbene, guftsamnt, giftscontact);
-
-                                }
-
-
-
-
-
-
-
-
+                                
                                 function addgift(table, data1, data2, data3) {
 
                                     var newRowHTML = `
@@ -1363,8 +1605,9 @@
 
 
                             /*WISHES*/
+                            var aboutwish = document.getElementById("wishabout").innerHTML.split(',');
 
-                            if (2 > 0) {
+                            if (aboutwish.length > 0) {
 
                                 var xyz = document.getElementById("wishes");
 
@@ -1388,14 +1631,14 @@
 
 
 
-                                var wishamnt = ["a"];
+                                // var wishamnt = ["a"];
 
 
 
 
                                 if (1 > 0) {
 
-                                    addwish(table, wishamnt);
+                                    addwish(table, aboutwish);
 
                                 }
 
@@ -1446,8 +1689,8 @@
 
 
                             /*Charity*/
-
-                            if (2 > 0) {
+                            var charity = document.getElementById("charityabout").innerHTML.split(',');
+                            if (charity.length > 0) {
 
                                 var xyz = document.getElementById("charity");
 
@@ -1470,16 +1713,11 @@
 
 
 
-                                var charamnt = ["a"];
+                                // var charamnt = ["a"];
 
+                                    addchar(table, charity);
 
-
-
-                                if (1 > 0) {
-
-                                    addchar(table, charamnt);
-
-                                }
+                                
 
 
 
@@ -1528,8 +1766,15 @@
 
 
                             /*Guardian*/
+                            var guard1name = document.getElementById("guard1name").innerHTML;
+                            var guard1no = document.getElementById("guard1no").innerHTML;
+                            var guard1email = document.getElementById("guard1email").innerHTML;
+                            var guard1relation = document.getElementById("guard1relation").innerHTML;
+                            var guard1address = document.getElementById("guard1address").innerHTML;
+                            var guard1passport = document.getElementById("guard1passport").innerHTML;
+                       
 
-                            if (2 > 0) {
+                            if (guard1name.length > 0) {
 
                                 var xyz = document.getElementById("guard1");
 
@@ -1552,33 +1797,33 @@
 
 
 
-                                var guardname1 = ["a"];
+                                // var guardname1 = ["a"];
 
-                                var guardrela1 = ["a"];
+                                // var guardrela1 = ["a"];
 
-                                var guardid1 = ["a"];
+                                // var guardid1 = ["a"];
 
-                                var guardcontact1 = ["a"];
+                                // var guardcontact1 = ["a"];
 
-                                var guardaddress1 = ["a"];
-
-
-
-
-                                if (1 > 0) {
-
-                                    addg1(table, guardname1, guardrela1, guardid1, guardcontact1, guardaddress1);
-
-
-
-                                }
+                                // var guardaddress1 = ["a"];
 
 
 
 
+                                
+
+                                    addg1(table, guard1name, guard1relation, guard1passport, guard1no, guard1address,guard1email);
 
 
-                                function addg1(table, data1, data2, data3, data4, data5) {
+
+                                
+
+
+
+
+
+
+                                function addg1(table, data1, data2, data3, data4, data5,data6) {
 
                                     var newRowHTML = `
 
@@ -1599,37 +1844,38 @@
 
 
 
-                                    for (var i = 0; i < data1.length; i++) {
-
-
-
                                         newRowHTML += `<tr>
 
-              <td>${data1[i]}</td>
+              <td>${data1}</td>
 
-              <td>${data2[i]}</td>
+              <td>${data2}</td>
 
-              <td>${data3[i]}</td>
+              <td>${data3}</td>
 
-              <td>${data4[i]}</td>
+              <td>${data4}, ${data6}</td>
 
-              <td>${data5[i]}</td>
+              <td>${data5}</td>
 
             </tr>`;
 
 
 
-                                    }
+                                    
 
                                     table.innerHTML += newRowHTML;
 
                                 }
 
-
+                            var guard2name = document.getElementById("guard2name").innerHTML;
+                            var guard2no = document.getElementById("guard2no").innerHTML;
+                            var guard2email = document.getElementById("guard2email").innerHTML;
+                            var guard2relation = document.getElementById("guard2relation").innerHTML;
+                            var guard2address = document.getElementById("guard2address").innerHTML;
+                            var guard2passport = document.getElementById("guard2passport").innerHTML;
 
                                 var xyz = document.getElementById("guard2");
 
-                                xyz.innerHTML += `<p>In case (Full Name from guardian 1 field)  is deceased, not available & unwilling to perform the duties of a guardian, then I appoint
+                                xyz.innerHTML += `<p>In case ${guard1name}  is deceased, not available & unwilling to perform the duties of a guardian, then I appoint
 
 
 
@@ -1651,33 +1897,29 @@
 
 
 
-                                var guardname2 = ["a"];
+                                // var guardname2 = ["a"];
 
-                                var guardrela2 = ["a"];
+                                // var guardrela2 = ["a"];
 
-                                var guardid2 = ["a"];
+                                // var guardid2 = ["a"];
 
-                                var guardcontact2 = ["a"];
+                                // var guardcontact2 = ["a"];
 
-                                var guardaddress2 = ["a"];
-
-
+                                // var guardaddress2 = ["a"];
 
 
-                                if (1 > 0) {
-
-                                    addg2(table, guardname2, guardrela2, guardid2, guardcontact2, guardaddress2);
+                                    addg2(table, guard2name, guard2relation, guard2passport, guard2no, guard2address,guard2email);
 
 
 
-                                }
+                                
 
 
 
 
 
 
-                                function addg2(table, data1, data2, data3, data4, data5) {
+                                function addg2(table, data1, data2, data3, data4, data5,data6) {
 
                                     var newRowHTML = `
 
@@ -1698,27 +1940,26 @@
 
 
 
-                                    for (var i = 0; i < data1.length; i++) {
-
+                                   
 
 
                                         newRowHTML += `<tr>
 
-              <td>${data1[i]}</td>
+              <td>${data1}</td>
 
-              <td>${data2[i]}</td>
+              <td>${data2}</td>
 
-              <td>${data3[i]}</td>
+              <td>${data3}</td>
 
-              <td>${data4[i]}</td>
+              <td>${data4}</td>
 
-              <td>${data5[i]}</td>
+              <td>${data5}</td>
 
             </tr>`;
 
 
 
-                                    }
+                                    
 
                                     table.innerHTML += newRowHTML;
 
@@ -1800,50 +2041,58 @@
                             Signed in the presence of witnesses, all of whom have put their signatures here under.
                         </div>
                     </div>
-                    
-                        
+
+
 
                     <!-- Existing HTML code -->
 
-<!-- ... -->
+                    <!-- ... -->
 
-<!-- Add the missing HTML markup for the boxes below the witness section -->
-<div class="fcontainer10">
-    
-    <div class="witness-container">
-        <div class="witness-box">
-            <!-- Witness 1 Box -->
-        </div>
-        <div class="witness-details">
-            <h3>Witness 1</h3>
-            <h3>Name:</h3>
-            <p><div class="f10item1">
-                <!-- Content here -->
-              </div></p>
-            <h3>Aadhaar/Passport Number:</h3>
-            <p><div class="f10item1">
-                <!-- Content here -->
-              </div></p>
-        </div>
-    </div>
-    <div class="witness-container">
-        <div class="witness-box">
-            <!-- Witness 2 Box -->
-        </div>
-        <div class="witness-details">
-            <h3>Witness 2</h3>
-            <h3>Name:</h3>
-            <p> <div class="f10item1">
-                <!-- Content here -->
-              </div></p>
-            
-            <h3>Aadhaar/Passport Number:</h3>
-            <p> <div class="f10item1">
-                <!-- Content here -->
-              </div></p>
-        </div>
-    </div>
-</div>
+                    <!-- Add the missing HTML markup for the boxes below the witness section -->
+                    <div class="fcontainer10">
+
+                        <div class="witness-container">
+                            <div class="witness-box">
+                                <!-- Witness 1 Box -->
+                            </div>
+                            <div class="witness-details">
+                                <h3>Witness 1</h3>
+                                <h3>Name:</h3>
+                                <p>
+                                <div class="f10item1">
+                                    <!-- Content here -->
+                                </div>
+                                </p>
+                                <h3>Aadhaar/Passport Number:</h3>
+                                <p>
+                                <div class="f10item1">
+                                    <!-- Content here -->
+                                </div>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="witness-container">
+                            <div class="witness-box">
+                                <!-- Witness 2 Box -->
+                            </div>
+                            <div class="witness-details">
+                                <h3>Witness 2</h3>
+                                <h3>Name:</h3>
+                                <p>
+                                <div class="f10item1">
+                                    <!-- Content here -->
+                                </div>
+                                </p>
+
+                                <h3>Aadhaar/Passport Number:</h3>
+                                <p>
+                                <div class="f10item1">
+                                    <!-- Content here -->
+                                </div>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
 
 
 
@@ -1867,21 +2116,21 @@
 
         </div>
 
-       
+
         <footer>
 
-            <div class="left">Will of</div>
+            <div class="left">Will of <%=details.name%></div>
 
-            <div class="right">ID</div>
+            <div class="right"><%=details.id%></div>
 
         </footer>
-        <script>
+        <!-- <script>
             // Example: Print the file when the page finishes loading
-            document.addEventListener('DOMContentLoaded',function(){window.print();});
+            document.addEventListener('DOMContentLoaded', function () { window.print(); });
         //    $(document).ready(function() {
         //         window.print();
         //     });
-    </script>
+        </script> -->
 
 </body>
 
