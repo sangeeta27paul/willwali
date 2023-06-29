@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+    
+        .firscontent {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            height: auto;
+            width: 100%;
+            margin-bottom: 30px;
+            align-items: flex-start;
+        }
+    
+        .class1 {
+            display: flex;
+            flex-direction: column;
+            width: 75%;
+            margin-right: 20px;
+            font-size-adjust: .7;
+        }
+    
+        .class2 {
+            margin-right: 30px;
+            margin-top: 25px;
+            display: flex;
+            flex-direction: column;
+            width: 25%;
+            aspect-ratio: 1;
+        }
+    
+        .imageofuser {
+            max-width: 200px;
+            min-width: 0px;
+            aspect-ratio: 1;
+        }
+    
+        #printOnly {
+            display: none;
+        }
+    
+        #bank,
+        #prop,
+        #invest,
+        #ppf,
+        #vehicle,
+        #insurance,
+        #gifts,
+        #wishes,
+        #charity {
+            display: flex;
+            flex-direction: column;
+            max-width: 100%;
+            min-width: 370px;
+            flex: 1;
+        }
+    
+        @media print {
+            #printOnly {
+                display: block;
+                @page {
+            size: A4;
+            margin: 0;
+        }}
+
+        body {
+            margin: 1.5cm;
+        }
+}
+    
+            .pagebreak {
+                page-break-before: always;
+            }
+    
+            footer .left {
+                float: left;
+            }
+    
+            footer .right {
+                float: right;
+            }
+    
+            footer {
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin-top: 20px;
+                height: 15px;
+            }
+        
+    
+        .main {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .parent {
+            background-color: white;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding-left: 2.5%;
+            max-width: 570px;
+            min-width: 0px;
+            justify-content: space-around;
+        }
+    
+        .fclass {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            max-width: 100%;
+            min-width: 0px;
+            padding-top: 20px;
+        }
+    
+        table {
+            margin-right: 10px;
+        }
+    
+        p,
+        h1,
+        .info {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 100%;
+            min-width: 0%;
+        }
+    
+        .fcontainer1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            max-width: 100%;
+            min-width: 0%;
+        }
+    
+        .f1item1,
+        .f1item2,
+        .f1item3,
+        .f1item4 {
+            display: flex;
+            max-width: 100%;
+            min-width: 0%;
+        }
+    
+        .bluetext {
+            color: #0078d7;
+        }
+    
+        #bt1 {
+            margin-top: 7px;
+        }
+    
+        .fcontainer2 {
+            display: flex;
+            flex-direction: row;
+            border: 2px solid black;
+            margin-top: 10px;
+            margin-right: 40px;
+            height: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 100%;
+            min-width: 0%;
+        }
+    
+        .f2item1 {
+            margin-left: 3.5%;
+            max-width: 100%;
+            min-width: 0%;
+        }
+    
+        .f2item2 {
+            width: 45%;
+            max-width: 100%;
+            min-width: 0%;
+        }
+    
+        .greytext {
+            color: grey;
+        }
+    
+        .fcontainer3 {
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;
+            max-width: 100%;
+            min-width: 0%;
+        }
+    
+        .f3item1,
+        .f3item2 {
+            display: flex;
+            max-width: 100%;
+            min-width: 0%;
+        }
+    
+        .greentext {
+            color: green;
+        }
+    
+        .fcontainer4 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+            flex-wrap: wrap;
+            height: auto;
+            transition: all .2s linear;
+        }
+    
+        .f4item1{
+            display: flex;
+            flex-direction: column;
+            border: 2px solid rgb(0, 0, 0);
+            flex: 1 1 250px;
+            margin-right: 20px;
+        }
+        .f4item2 {
+            display: flex;
+            flex-direction: column;
+            border: 2px solid rgb(0, 0, 0);
+            flex: 1 1 250px;
+            margin-right: 20px;
+        }
+    
+        .fcontainer5 {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .f5item1,
+        .f5item2 {
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;
+        }
+    
+        .fclass6 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            width: 100%;
+            height: auto;
+            transition: all .2s linear;
+        }
+    
+        .fcontainer7,
+        .fcontainer9 {
+            display: flex;
+            flex-direction: column;
+            margin-top: 15px;
+            margin-right: 20px;
+            height: 250px;
+            flex: 1 1 250px;
+        }
+    
+        .f7class1 {
+            display: flex;
+            flex-direction: column;
+            flex: 1 1 250px;
+            height: 180px;
+        }
+    
+        .f7class2 {
+            display: flex;
+            flex-direction: column;
+            flex: 1 1 250px;
+            height: 70px;
+        }
+    
+        .f7item1,
+        .f7item2,
+        .f7item3,
+        .f7item4,
+        .f7item5,
+        .f7item6 {
+            display: flex;
+            max-width: 100%;
+            min-width: 0%;
+        }
+    
+        .fcontainer8 {
+            margin-top: 15px;
+            margin-right: 20px;
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 90px;
+        }
+    
+        .f8item1 {
+            display: flex;
+            padding: 10px;
+            width: 25%;
+            aspect-ratio: 1;
+            border: 1px solid black;
+        }
+    
+        .f8item2 {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 15px 10px 15px 10px;
+            border: 2px solid black;
+            font-size: 9px;
+            margin-right: 20px;
+            width: 75%;
+        }
+       
+    /* Existing CSS code */
+
+    /* ... */
+
+    .fcontainer10 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 15px;
+        margin-right: 20px;
+    }
+
+    
+    /* Existing CSS code */
+
+    /* ... */
+
+    .fcontainer10 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 15px;
+        margin-right: 20px;
+    }
+    .f10item1 {
+    display: flex;
+    border: 2px solid black;
+    width: 100%;
+    margin-top: 45px;
+}
+
+    .witness-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .witness-box {
+        width: 200px;
+        height: 150px;
+        border: 2px solid black;
+        margin-bottom: 10px;
+    }
+
+    .witness-details {
+        text-align: center;
+    }
+</style>
+
+
+
+    
+
+</head>
+
+<body>
+
+    <img. src="" alt="wasiyat" width="100" height="100">
+
+        <div class="main">
+
+
+
+
+            <div class="parent">
+
+
+
+
+                <div class="fclass">
+
+                    <div class="firscontent">
+                        <div class="class1">
+                            <div class="item1">
+                                <h2><b>The Will and Testament of</b></h2>
+                            </div>
+                            <div class="item2 greentext">
+                                <%=details.name%>
+                            </div>
+                            <div class="item3 greentext">
+                                <%=details.passport%>
+                            </div>
+                        </div>
+                        <div class="class2">
+                            <!-- <div class="item4"> -->
+                            <img src="img.png" alt="fgdbr" class="imageofuser">
+                            <!-- </div> -->
+                        </div>
+                    </div>
+
+                    <p>This Will is made by me (<%=details.name%> & <%=details.passport%>) currently residing in
+                        <%=details.residance%> and my nationality is <%=details.nationality%>. I’m of full age and capacity
+                            and being of sound mind hereby declare that I make this Will voluntarily and without any
+                            duress and or undue influence for my assets in <%=details.assetcountry%>.</p>
+
+                    <h1>1. REVOCATION</h1>
+
+
+
+
+                    <div class="info">
+
+                        <p>I have not made any Will or other testamentary document in <%=details.assetcountry%>, but if any is made, I
+                                hereby revoke all previous Wills and Codicils, if any, and declare this to be my Last
+                                Will and Testament.
+
+                        </p>
+
+
+
+
+                        <html lang="en">
+
+                        <head>
+
+                            <meta charset="UTF-8">
+
+                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+                            
+
+                            
+<style>
+                                table {
+
+                                    width: 100%;
+
+                                    border-collapse: collapse;
+
+                                }
+
+                                table {
+                                    page-break-inside: auto
+                                }
+
+                                tr {
+                                    page-break-inside: avoid;
+                                    page-break-after: auto
+                                }
+
+                                td {
+                                    page-break-inside: avoid;
+                                    page-break-after: auto
+                                }
+
+                                thead {
+                                    display: table-header-group
+                                }
+
+                                tfoot {
+                                    display: table-footer-group
+                                }
+
+
+
+
+                                table,
+                                th,
+                                td {
+
+                                    border: 1px solid black;
+
+                                    padding: 10px;
+
+                                }
+
+                                th {
+
+                                    background-color: #f2f2f2;
+
+                                    text-align: left;
+
+                                }
+                            </style>
+
+                        </head>
+<div>
+                        <h1>2. EXECUTORS AND TRUSTEES
+
+
+
+
+                        </h1>
+
+                        <p>I, hereby appoint as my sole Executor and Trustee of this my Will
+
+                        </p>
+
+                        <table>
+
+                            <thead>
+
+                                <tr>
+
+                                    <th>Name</th>
+
+                                    <th>Relationship to testator</th>
+
+                                    <th>ID/ Passport</th>
+
+                                    <th>Contact no & email</th>
+
+                                    <th>Address if any provided</th>
+
+                                </tr>
+
+                            </thead>
+
+                            <tbody id="executor">
+
+                                <td><%=exe.executor1.name%></td>
+                                <td><%=exe.executor1.relation%></td>
+                                <td><%=exe.executor1.passport%></td>
+                                <td><%=exe.executor1.contactno%>,<%=exe.executor1.email%></td>
+                                <td></td>
+
+                            </tbody>
+
+                        </table>
+
+                        <p>
+
+                            In case (Full Name from executor1 field) is deceased, not available & unwilling to perform
+                            the duties of an executor, then I appoint
+
+                        </p>
+
+                        <table>
+
+                            <thead>
+
+                                <tr>
+
+                                    <th>Name</th>
+
+                                    <th>Relationship to testator</th>
+
+                                    <th>ID/ Passport</th>
+
+                                    <th>Contact no & email</th>
+
+                                    <th>Address if any provided</th>
+
+                                </tr>
+
+                            </thead>
+
+                            <tbody id="executor">
+
+                                <td><%=exe.executor2.name%></td>
+                                <td><%=exe.executor2.relation%></td>
+                                <td><%=exe.executor2.passport%></td>
+                                <td><%=exe.executor2.contactno%>,<%=exe.executor2.email%></td>
+                                <td></td>
+
+                            </tbody>
+
+                        </table>
+
+                        <h1>3. FUNERAL EXPENSES AND DEBTS
+
+                        </h1>
+
+                        <p>3.1 I direct the Executor to pay all my lawful debts, funeral and testamentary expenses out
+                            of my estate as possible after my death.
+
+                        </p>
+
+                        <p>3.2 The Executor shall have the power to sell and convert any assets into cash to pay all
+                            debts (if any).
+
+                        </p>
+
+
+
+
+                        <h1>4. ASSETS in COUNTRY for which will is being made <%=bank.name[0]%>
+
+                        </h1>
+                    </div>
+                    <div id="yy" style="display:none"><%=bank.name%></div>
+                    <div id="zz" style="display:none"><%=bank.bene%></div>
+                    <div id="bankshare" style="display:none"><%=bank.share%></div>
+                    <div id="bankcontact" style="display:none"><%=bank.contact%></div>
+                    <div id="bankcount" style="display:none"><%=bank.count%></div>
+                    <div id="bankno" style="display:none"><%=bank.no%></div>
+                        <div id="bank"></div>
+
+                        <div id="prop"></div>
+
+                        <div id="invest"></div>
+
+                        <div id="ppf"></div>
+
+                        <div id="vehicle"></div>
+
+                        <div id="insurance"></div>
+
+                        <div id="gifts"></div>
+
+                        <div id="wishes"></div>
+
+                        <div id="charity"></div>
+
+                        <div id="guard1"></div>
+
+                        <div id="guard2"></div>
+
+
+
+                        <div class="page-break"></div>
+                       
+                        <script>
+                            //console.log(document.getElementById("zz").innerHTML);
+                           // let bankdetails= JSON.stringify(<%-bank.name%>);
+                            var x = document.getElementById("yy").innerHTML.split(',');
+                            var bankbene = document.getElementById("zz").innerHTML.split(',');
+                            var bankcount = document.getElementById("bankcount").innerHTML.split(',');
+                            var bankshare = document.getElementById("bankshare").innerHTML.split(',');
+                            var bankcontact = document.getElementById("bankcontact").innerHTML.split(',');
+                            var bankno = document.getElementById("bankno").innerHTML.split(',');
+                               if (2 > 0) {
+   
+                                   var xyz = document.getElementById("bank");
+   
+                                   xyz.innerHTML += `<p>This is how I want the distribution of my bank accounts to be executed ABSOLUTELY -
+   
+   </p><h2>4.1 BANK ACCOUNTS ${bankbene[0]}</h2>`;
+   
+   
+                                var bankflag=0;
+                                   for (var j = 0; j < x.length; j++) {
+   
+                                       var table = document.createElement("table");
+   
+                                       table.id = "tb" + (j + 1);
+   
+                                       xyz.appendChild(table);
+   
+   
+   
+   
+                                    //    var bankbene = y[j].split(",");
+   
+                                    //    var bankamnt =bankshare[i].split(",");
+   
+   
+                                    //    var bankcontact = bankcontct[i].split(",");
+   
+   
+   
+   
+   
+                                       if (bankcount[j] > 0) {
+   
+                                           addbank(table,bankflag, bankbene, bankshare, bankcontact);
+   
+                                       }
+   
+                                       if (j < 2) {
+   
+                                           var lineBreak = document.createElement("br");
+   
+                                           xyz.appendChild(lineBreak);
+   
+                                           xyz.appendChild(lineBreak.cloneNode(true));
+   
+                                       }
+                                       bankflag=bankflag+parseInt(bankcount[j]);
+   
+                                   }
+   
+   
+   
+   
+                                   function addbank(table,flag, data1, data2, data3) {
+   
+                                       var newRowHTML = `<tr>
+   
+             <td colspan="3">
+   
+               <p>Bank Name:${bankname[j]}</p>
+   
+               <p>Branch Code/IFSC Code</p>
+   
+               <p>Account No:${bankno[j]}</p>
+   
+             </td>
+   
+           </tr>
+   
+           <tr>
+   
+             <th>Beneficiary</th>
+   
+             <th>Amount in %</th>
+   
+             <th>Contact if provided by user</th>
+   
+           </tr>`;
+   
+   
+   
+   
+                                       for (var i = flag; i <flag+parseInt(bankcount[j]); i++) {
+   
+   
+   
+                                           newRowHTML += `<tr>
+   
+                 <td>${data1[i]}</td>
+   
+                 <td>${data2[i]}</td>
+   
+                 <td>${data3[i]}</td>
+   
+               </tr>`;
+   
+   
+   
+                                       }
+   
+                                       table.innerHTML += newRowHTML;
+   
+                                   }
+                                   
+                               }
+                            
+                        </script>
+                        <div class="pagebreak"> </div>
+
+
+                    </div>
+
+                    <div class="fcontainer1">
+                        <div class="f1item1">
+                            <h3>RESIDUARY ESTATE</h3>
+                        </div>
+                        <div class="f1item2">
+                            6.1 I give all my property residual and not mentioned above subject of my funeral and
+                            testamentary expenses debts and all
+                            estates and other duties payable on or by reason of my death to all my beneficiaries in
+                            equal
+                            share
+                        </div>
+                        <div class="f1item3">
+                            6.2. Should any of the beneficiaries predecease me, then all his/her share in the immovable
+                            or
+                            movable properties shall be
+                            distributed equally among the surviving beneficiaries.
+                        </div>
+                        <div class="f1item4">
+                            I have made this Will out of my free will and while I am in sound health and in good
+                            understanding and in witness thereof I
+                            have put my signature hereunder in the presence of two witnesses.
+                        </div>
+                        <div class="bluetext" id="bt1">
+                            <i><b>Tip</b>: Write the date, month, year when you are signing the will along with both
+                                witnesses.
+                            </i>
+                        </div>
+                    </div>
+
+                    <div class="fcontainer2">
+                        <div class="f2item1">
+                            <b>Date:</b> <span class="greytext"> dd/mm/yy </span>
+                        </div>
+                        <div class="f2item2 greytext">
+                            <b>Place:</b>
+                        </div>
+                    </div>
+
+                    <div class="fcontainer3">
+                        <div class="f3item1 greytext">
+                            Signed by the within named
+                        </div>
+                        <div class="f3item2 greentext">
+                            (name of the Testator)
+                        </div>
+                    </div>
+
+                    <div class="fcontainer4">
+                        <div class="f4item1 greentext">
+                            Signature of (testator's name)
+                        </div>
+                        <div class="f4item2 greytext">
+                            Tip: Make sure that you and both witnesses will sign the will at
+                            the same time, in front of each other.
+                        </div>
+                    </div>
+
+                    <div class="fcontainer5">
+                        <div class="f5item1 bluetext">
+                            Tip: Make sure your witnesses are not the beneficiaries (receiving any assets) in your will.
+                        </div>
+                        <div class="f5item2">
+                            Signed in the presence of witnesses, all of whom have put their signatures here under.
+                        </div>
+                    </div>
+                    
+                        
+
+                    <!-- Existing HTML code -->
+
+<!-- ... -->
+
+<!-- Add the missing HTML markup for the boxes below the witness section -->
+<div class="fcontainer10">
+    
+    <div class="witness-container">
+        <div class="witness-box">
+            <!-- Witness 1 Box -->
+        </div>
+        <div class="witness-details">
+            <h3>Witness 1</h3>
+            <h3>Name:</h3>
+            <p><div class="f10item1">
+                <!-- Content here -->
+              </div></p>
+            <h3>Aadhaar/Passport Number:</h3>
+            <p><div class="f10item1">
+                <!-- Content here -->
+              </div></p>
+        </div>
+    </div>
+    <div class="witness-container">
+        <div class="witness-box">
+            <!-- Witness 2 Box -->
+        </div>
+        <div class="witness-details">
+            <h3>Witness 2</h3>
+            <h3>Name:</h3>
+            <p> <div class="f10item1">
+                <!-- Content here -->
+              </div></p>
+            
+            <h3>Aadhaar/Passport Number:</h3>
+            <p> <div class="f10item1">
+                <!-- Content here -->
+              </div></p>
+        </div>
+    </div>
+</div>
+
+
+
+                    <div class="fcontainer8">
+                        <div class="f8item1">
+                            <img src="" alt="">
+                        </div>
+                        <div class="f8item2 greytext">
+                            Tip: Once all 3 signatures are done, scan this QR code. You will be taken to a page on
+                            Willwali.com
+                            where you can take a PHOTO of this page only and upload it into your account. Once uploaded,
+                            you
+                            will have a digital copy of this page in your user dashboard.
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+       
+        <footer>
+
+            <div class="left">Will of</div>
+
+            <div class="right">ID</div>
+
+        </footer>
+      
+
+</body>
+
+</html>
